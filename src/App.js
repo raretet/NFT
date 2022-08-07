@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import './App.css';
 import Buttons from './components/buttons/Buttons';
 import Icons from './components/icons/icons';
@@ -10,7 +11,14 @@ import Subtitle from './components/subtitle/Subtitle';
 import Founder from './components/team/Founder';
 import Title from './components/title/title';
 
+const titleList = ['Blvck Phantoms','Blvck Shadows' ]
+const textList = [ 'Introducing the rarest 10% of the Blvck Genesis NFT collection, the Blvck Phantoms. Characterised by their wings made of light and shining grey skin, the 999 Phantoms roam freely in Blvck City. Blvck Phantoms remain emotionless and live without feelings.',  'Introducing the rarest 1% of Blvck Genesis, the Shadows. There are only 99 of them, characterised by their metallic dark skin and can be found in the depths of Blvck Land. Blvck Shadows are the firstborns of the Blvck Realm, their immortality is under threat in a world tainted by myths. <br/><br/> Act II depicts the rebellion of the Shadows against the Phantoms to claim what was once theirs. The rise of the Shadows has began.']
+
 function App() {
+
+  const [titleIndex, setTitleIndex] = useState(0)
+  const [textIndex, setTextIndex] = useState(0)
+
   return (
     <div className="App">
       <section>
@@ -28,6 +36,7 @@ function App() {
         </div>
         </div>
       </section>
+
       <section>
         <div className='roadmap'>
           <div className='section2_title'>
@@ -46,8 +55,49 @@ function App() {
           </div>
         </div>
       </section>
-      <section>
 
+      <section>
+        <div className='acts'>
+          <div className='act_container'>
+              <div className='section3_content'>
+                <div className='section3_header'>
+                    <button onClick={() => {setTextIndex(0); setTitleIndex(0)}}>ACT I</button>
+                    <button onClick={() => {setTextIndex(1); setTitleIndex(1)}}>ACT II</button>
+                    <button className='disabled_button' onClick={() => setTextIndex(1)} disabled>ACT III</button>
+                </div>
+              <div className='section3_text'>
+                <h1 className='section3_title' >{titleList[titleIndex]}</h1>
+                <div className='section3_subtitle' >{textList[textIndex]}</div>
+              </div>
+            </div>
+          </div>
+          <div className='play'>
+            <img src='/images/play-button.svg' alt=''/>
+            <div className='section3_link'>
+              <a href='https://youtube.com'>Play Now </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div className='darker'>
+          <div className='section4_content'>
+            <div className='section4_title'>
+              <Title text='The Darker, the rarer.'/>
+            </div>
+            <div className='section4_subtitle'>
+              <Subtitle text='With over 250 High Fashion traits.'/>
+            </div>
+            <div className='icons'>
+              <Icons img='/images/traits_outfit.png' text='OUTFIT'/>
+              <Icons img='/images/traits_league.png' text='LEAGUE'/>
+              <Icons img='/images/traits_tattoo.png' text='TATTOO'/>
+              <Icons img='/images/traits_haircut.png' text='HAIRCUT'/>
+              <Icons img='/images/traits_more.png' text='MORE'/>
+            </div>
+          </div>
+        </div>
       </section>
     </div>
   );

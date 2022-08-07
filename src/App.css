@@ -116,3 +116,141 @@
 .section2_img {
   margin: 100px 0px 0px 100px;
 }
+
+/* Section 3*/
+
+.acts {
+  background-image: url(/public/images/blvck_avatar.png); 
+  background-size: cover;
+}
+
+.act_container {
+  padding: 320px 0 100px;
+  font-family: 'GothamLight';
+}
+
+.section3_content {
+  margin: 0 487px;
+}
+
+.section3_header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  border-bottom: 2px solid white;
+}
+
+.disabled_button {
+  cursor: not-allowed; 
+}
+
+.section3_header button {
+  box-sizing: border-box;
+  display: block;
+  background-color: transparent;
+  border: none;
+  color: #a3a3a3;
+  position: relative;
+  padding: 1.5rem;
+  margin: 0 1rem;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: .3rem;
+}
+
+.active_button{
+      /* active button*/
+}
+
+.active_button::before{
+  content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.25rem;
+    background-color: white;
+}
+
+.disabled_button::after {
+  content: "Soon";
+    position: absolute;
+    top: -15%;
+    right: -25%;
+    display: block;
+    background-color: white;
+    color: black;
+    padding: 0.5rem 0.8rem;
+    border-radius: 10rem;
+    font-size: 1rem;
+    letter-spacing: normal;
+    line-height: 1;
+}
+
+
+.section3_text {
+  font-family: 'GothamLight';
+  font-weight: 400;
+  color: white;
+  text-align: left;
+  margin-left: 100px;
+  max-width: 600px;
+}
+
+.section3_title {
+  font-size: 3.25rem;
+  line-height: 1.4;
+  margin-bottom: 2rem;
+}
+
+.section3_subtitle {
+  font-size: 1rem;
+  line-height: 1.875rem;
+}
+
+.play {
+  margin-left: 900px;
+} 
+
+.play img{
+  width: 6.25rem;
+  filter: invert(100%);
+
+}
+
+.section3_link {
+  margin-top: 10px;
+  padding-bottom: 80px;
+}
+
+.section3_link a{
+  font-family: 'GothamLight';
+  font-weight: 700;
+  margin-top: 0.5rem;
+  font-size: 1.35rem;
+  line-height: 2.45rem;
+  white-space: nowrap;
+  color: black;
+  filter: invert(50%);
+}
+
+/* Section 4 */
+
+.darker {
+  background-image: url(/public/images/bg_traits.jpg);
+  background-size: cover;
+  font-family: 'GothamLight';
+}
+
+.section4_content {
+  padding: 240px 32px;
+}
+
+.icons {
+  display: flex;
+  margin: 50px 0px 0px 650px;
+}
