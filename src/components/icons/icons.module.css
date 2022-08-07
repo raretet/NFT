@@ -1,0 +1,17 @@
+.container {
+    width: 100%;
+    max-width: 66px;
+}
+
+.container img {
+    width: 66px;
+}
+
+.text {
+    font-size: .7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 1rem;
+    text-align: center;
+    color: white;
+}

@@ -1,0 +1,14 @@
+a {
+    text-decoration: none;
+    color: #9194a6;
+    transition: .6s;
+    font-weight: 700;
+}
+
+a:hover {
+    opacity: 50%;
+}
+
+.link {
+    margin: 32px 24px 0px;
+}

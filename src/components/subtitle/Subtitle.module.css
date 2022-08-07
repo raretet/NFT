@@ -1,0 +1,8 @@
+.text { 
+    display: block;
+    font-size: 1.125rem;
+    text-align: center;
+    color: inherit;
+    line-height: 2;
+    color: white;
+}

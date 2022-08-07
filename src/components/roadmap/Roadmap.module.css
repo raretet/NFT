@@ -1,0 +1,71 @@
+.roadmap {
+    height: 100%;
+    width: 100%;
+    padding: 3rem 0 5rem 3rem;
+}
+
+.container {
+    padding: 1rem;
+    padding-left: 2.5rem;
+    padding-bottom: 0;
+    position: relative;
+    max-width: 32.25rem;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.container::before {
+    content: "";
+    display: block;
+    background-color: gray;
+    height: 99%;
+    width: 0.75rem;
+    position: absolute;
+    left: 0;
+    top: -0.25rem;
+    border-radius: 10px;
+}
+
+.item {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.item::before {
+    content: "";
+    display: block;
+    background-image: url(../../../public/images/roadmap_circle.png);
+    background-size: 5rem;
+    background-position: center;
+    height: 2.5rem;
+    width: 2.5rem;
+    position: absolute;
+    left: -3.4rem;
+    top: 1rem;
+    border-radius: 50%;
+}
+
+.title { 
+    display: inline-block;
+    position: relative;
+    font-size: 1.2rem;
+    color: white;
+    background-color: black;
+    padding: 1.5rem;
+    text-transform: uppercase;
+}
+
+.date {
+    display: block;
+    margin: 1.5rem 0;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: white;
+}
+
+.ul {
+    padding-left: 1rem;
+    margin: 1.5rem 0 2.35rem 0;
+    color: white;
+    line-height: 150%;
+}

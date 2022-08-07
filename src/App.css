@@ -1,0 +1,118 @@
+@font-face {
+  font-family: 'GothamLight';
+  src: url(/public/font/1824-font.otf);
+}
+
+.button_grey {
+  padding: 16px;
+  background: linear-gradient(#777b8b,#575966);
+  border: 0;
+  max-width: 14rem;
+  font-size: .8rem;
+  min-width: 200px;
+  transition: .6s;
+  margin: 0 555px 40px;
+  font-family: 'GothamLight';
+}
+
+.button_grey:hover {
+  opacity: 50%;
+}
+
+.button_grey a {
+  color: white;
+  text-transform: uppercase;
+  margin: 0 auto;
+}
+
+
+.button_black a {
+  text-decoration: none;
+  color: white;
+}
+
+.button_black {
+  border: 1px solid #9194a6;
+  background-color: black;
+  color: white;
+  padding: 1rem 3.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  cursor: pointer;
+  text-transform: uppercase;
+  min-width: 300px;
+  text-decoration: none;
+  transition: .6s;
+  font-family: 'GothamLight';
+}
+
+.button_black:hover {
+  opacity: 50%;
+}
+
+
+/*Section 1*/
+
+.container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  font-family: 'GothamLight';
+}
+
+.heroes {
+  background-image: url(/public/images/bg_hero@2x.jpg);
+  background-size: cover;
+}
+
+.section1_logo img{
+  margin: 80px 0px 0px 580px;
+}
+
+.section1_title {
+  padding-top: 170px;
+}
+
+.section1_button {
+  padding-bottom: 150px;
+}
+
+.section1_button_grey {
+  text-align: center;
+}
+
+.section1_SN {
+  text-align: center;
+  margin-right: 20px;
+  padding-bottom: 40px;
+}
+
+.SN {
+  padding: 0px 10px 0px 30px;
+}
+
+/*Section 2*/
+
+.roadmap {
+  background-image: url(/public/images/bg_roadmap@2x.jpg);
+  background-size: cover;
+  padding-top: 130px;
+  font-family: 'GothamLight';
+  text-align: center;
+}
+
+.section2_subtitle {
+  margin-left: 600px;
+  max-width: 700px;
+  text-align: center;
+}
+
+.section2_content {
+  display: flex;
+}
+
+.section2_img {
+  margin: 100px 0px 0px 100px;
+}
