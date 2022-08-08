@@ -20,13 +20,13 @@ function App() {
 
   return (
     <div className="App">
-      <section>
+      <header>
        <div className='heroes'>
         <div className='container'>
           <div className='section1_logo'><Logo img='/images/logoWhite.png'/></div>
           <div className='section1_title'><Title text='Blvck Members-Only Experience: Phygital, Fashion & Events.'/></div>
           <div className='section1_button'><Buttons button='button_black' text='Membership Dashboard' href=''/></div>
-          <div className='section1_button_grey'><Buttons button='button_grey' text='some text' href=''/></div>
+          <div className='section1_button_grey'><Buttons button='button_grey' text='Join the Discord' href=''/></div>
           <div className='section1_SN'>
           <span className='SN'><SN img='/images/social_instagram.png' href='https://instagram.com/'/></span>
           <span className='SN'><SN img='/images/social_twitter.png' href='https://twitter.com/blvckparis'/></span>
@@ -34,7 +34,7 @@ function App() {
           </div>
         </div>
         </div>
-      </section>
+      </header>
 
       <section>
         <div className='roadmap'>

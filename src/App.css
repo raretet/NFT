@@ -11,7 +11,8 @@
   font-size: .8rem;
   min-width: 200px;
   transition: .6s;
-  margin: 0 555px 40px;
+  width: 224px;
+  margin: 0 auto;
   font-family: 'GothamLight';
 }
 
@@ -65,10 +66,12 @@
 .heroes {
   background-image: url(/public/images/bg_hero@2x.jpg);
   background-size: cover;
+  background-position: center;
 }
 
 .section1_logo img{
-  margin: 80px 0px 0px 580px;
+  display: flex;
+  flex: 1;
 }
 
 .section1_title {
@@ -80,17 +83,15 @@
 }
 
 .section1_button_grey {
+  margin-bottom: 40px;
   text-align: center;
 }
 
 .section1_SN {
-  text-align: center;
-  margin-right: 20px;
-  padding-bottom: 40px;
-}
-
-.SN {
-  padding: 0px 10px 0px 30px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 224px;
 }
 
 /*Section 2*/
