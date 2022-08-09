@@ -112,13 +112,13 @@ const DashboardPage = () => {
         </div>
         <div className='footer_SN'>
           <div>
-          <SN img='/images/social_instagram.png' href='https://instagram.com/'/>
+          <SN img='/images/social_instagram.png' href='https://instagram.com/black'/>
           </div>
           <div>
-          <SN img='/images/social_twitter.png' href='https://instagram.com/'/>
+          <SN img='/images/social_twitter.png' href='https://twitter.com/blvckparis'/>
           </div>
           <div>
-          <SN img='/images/social_opensea.png' href='https://instagram.com/'/>
+          <SN img='/images/social_opensea.png' href='https://opensea.io/collection/blvckgenesis/'/>
           </div>
         </div>
         <div className='footer_links'>

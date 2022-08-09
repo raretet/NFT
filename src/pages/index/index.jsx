@@ -35,7 +35,7 @@ const IndexPage = () => {
           <div className='section1_button'><Buttons button='button_black' text='Membership Dashboard' href='/dasboard' link/></div>
           <div className='section1_button_grey'><Buttons button='button_grey' text='Join the Discord' href='https://discord.com/invite/blvckparis'/></div>
           <div className='section1_SN'>
-          <span className='SN'><SN img='/images/social_instagram.png' href='https://instagram.com/'/></span>
+          <span className='SN'><SN img='/images/social_instagram.png' href='https://instagram.com/black'/></span>
           <span className='SN'><SN img='/images/social_twitter.png' href='https://twitter.com/blvckparis'/></span>
           <span className='SN'><SN img='/images/social_opensea.png' href='https://opensea.io/collection/blvckgenesis'/></span>
           </div>
@@ -172,7 +172,7 @@ const IndexPage = () => {
             <div className='section7_mainFounder'><Founder image='/images/avatar_01.jpg' name='Julian O.hayon' position='Founder & Designer of Blvck'/></div>
             <div className='section7_SN-container'>
               <div className='section7_SNs'>
-              <div className='section7_SN'><SN img='/images/social_instagram.png' href='https://instagram.com/'/></div>
+              <div className='section7_SN'><SN img='/images/social_instagram.png' href='https://instagram.com/anckor'/></div>
               <div className='section7_SN'><SN img='/images/social_opensea.png' href='https://opensea.com/'/></div>
               </div>
             </div>
@@ -233,13 +233,13 @@ const IndexPage = () => {
         </div>
         <div className='footer_SN'>
           <div>
-          <SN img='/images/social_instagram.png' href='https://instagram.com/'/>
+          <SN img='/images/social_instagram.png' href='https://instagram.com/black'/>
           </div>
           <div>
-          <SN img='/images/social_twitter.png' href='https://instagram.com/'/>
+          <SN img='/images/social_twitter.png' href='https://twitter.com/blvckparis'/>
           </div>
           <div>
-          <SN img='/images/social_opensea.png' href='https://instagram.com/'/>
+          <SN img='/images/social_opensea.png' href='https://opensea.io/collection/blvckgenesis'/>
           </div>
         </div>
         <div className='footer_links'>
