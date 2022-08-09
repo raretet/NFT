@@ -4,12 +4,14 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
+import PageTwo from './components/page2/page2';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
   <BrowserRouter>
     <App />
+    <PageTwo/>
   </BrowserRouter>
   </React.StrictMode>
 );

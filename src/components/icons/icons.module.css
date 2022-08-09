@@ -1,17 +1,14 @@
 .container {
     width: 100%;
     max-width: 66px;
-    padding: 15px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     position: relative;
-    margin-right: 1rem;
-
 }
 
 .container img {
-    width: 66px;
+    width: 55px;
 }
 
 .text {

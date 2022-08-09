@@ -3,6 +3,10 @@
   src: url(/public/font/1824-font.otf);
 }
 
+* {
+  box-sizing: border-box;
+}
+
 .button_grey {
   padding: 16px;
   background: linear-gradient(#777b8b,#575966);
@@ -78,11 +82,16 @@
   padding-top: 170px;
 }
 
+.section1_title h1 {
+
+}
+
 .section1_button {
-  padding-bottom: 150px;
+  padding-bottom: 50px;
 }
 
 .section1_button_grey {
+  padding-top: 150px;
   margin-bottom: 40px;
   text-align: center;
 }
@@ -92,9 +101,14 @@
   justify-content: space-between;
   margin: 0 auto;
   max-width: 224px;
+  padding-bottom: 30px;
 }
 
 /*Section 2*/
+
+.section2 {
+  display: block;
+}
 
 .roadmap {
   background-image: url(/public/images/bg_roadmap@2x.jpg);
@@ -105,33 +119,44 @@
 }
 
 .section2_subtitle {
-  margin-left: 600px;
+  margin: 0 auto 2rem;
   max-width: 700px;
   text-align: center;
 }
 
 .section2_content {
-  display: flex;
+  width: 100%;
+  margin: 0 auto;
 }
 
+
 .section2_img {
-  margin: 100px 0px 0px 100px;
-}
+  height: 23.4375rem;
+  background: url(/public/images/astronaut2.png) center bottom/contain no-repeat;
+} 
+
+
 
 /* Section 3*/
 
 .acts {
+  display: block;
   background-image: url(/public/images/blvck_avatar.png); 
   background-size: cover;
+  background-position: center;
+  
 }
 
 .act_container {
-  padding: 320px 0 100px;
+  padding: 20rem 0 0rem;
+  margin: 0 auto;
   font-family: 'GothamLight';
 }
 
 .section3_content {
-  margin: 0 487px;
+  width: 90%;
+  margin: 0 auto;
+  max-width: 58rem
 }
 
 .section3_header {
@@ -154,7 +179,7 @@
   color: #a3a3a3;
   position: relative;
   padding: 1.5rem;
-  margin: 0 1rem;
+  margin: 0 auto;
   font-weight: 700;
   font-size: 1.5rem;
   line-height: 1;
@@ -178,11 +203,15 @@
     background-color: white;
 }
 
+.disabled_button {
+  margin: 0;
+}
+
 .disabled_button::after {
   content: "Soon";
     position: absolute;
     top: -15%;
-    right: -25%;
+    right: -15%;
     display: block;
     background-color: white;
     color: black;
@@ -198,8 +227,7 @@
   font-family: 'GothamLight';
   font-weight: 400;
   color: white;
-  text-align: left;
-  margin-left: 100px;
+  margin: 0 auto;
   max-width: 600px;
 }
 
@@ -215,18 +243,25 @@
 }
 
 .play {
-  margin-left: 900px;
+  margin: 0 auto;
 } 
 
-.play img{
+.section3_text img{
+  display: block;
   width: 6.25rem;
   filter: invert(100%);
-
+  margin: 3.75rem auto 0;
 }
 
 .section3_link {
+  display: block;
   margin-top: 10px;
   padding-bottom: 80px;
+  text-align: center;
+}
+
+.section3_link a {
+  font-weight: 700;
 }
 
 .section3_link a{
@@ -245,22 +280,38 @@
 .darker {
   background-image: url(/public/images/bg_traits.jpg);
   background-size: cover;
+  background-position: center;
   font-family: 'GothamLight';
 }
 
 .section4_content {
   padding: 240px 32px;
+  position: relative;
 }
 
 .icons {
   display: flex;
-  margin: 50px 0px 0px 650px;
+  justify-content: center;
+  margin-top: 20px;
 }
+
+.icon_container {
+  width: 100%;
+  max-width: 55px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+  margin-right: 1rem;
+  text-align: center;
+}
+
+
 
 /*Section 5*/
 
 .section5_container {
-  padding: 10rem 2rem;
+  padding: 5rem 1rem;
   background: black;
   font-family: 'GothamLight';
   
@@ -274,6 +325,11 @@
     max-width: 61.5rem;
     padding: .5rem;
     margin: 0 auto;
+}
+
+.about h1 {
+  font-size: 2.4rem;
+    line-height: 1.4;
 }
 
 .section5_text {
@@ -297,7 +353,6 @@
 }
 
 .section6_container {
-  margin: 0 231px;
   padding: 24px;
 }
 
@@ -324,6 +379,7 @@
   display: block;
   margin-left: 1.25rem;
   margin-right: 1.25rem;
+  margin-bottom: 2rem;
   width: 111px;
   height: 28px;
 }
@@ -334,6 +390,7 @@
   margin-right: 1.25rem;
   width: 148px;
   height: 19px;  
+  margin-bottom: 2rem;
 }
 
 .decentraland {
@@ -342,6 +399,7 @@
   margin-right: 1.25rem;
   width: 190px;
   height: 24px;
+  margin-bottom: 2rem;
 }
 
 .entrepreneur {
@@ -350,6 +408,7 @@
   display: block;
   margin-left: 1.25rem;
   margin-right: 1.25rem;
+  margin-bottom: 2rem;
 }
 
 .vogue {
@@ -358,6 +417,7 @@
   margin-right: 1.25rem;
   width: 107px;
   height: 28px;
+  margin-bottom: 2rem;
 }
 
 .makersplace {
@@ -366,18 +426,25 @@
   margin-right: 1.25rem;
   width: 197px;
   height: 34px;
+  margin-bottom: 2rem;
 }
 
 /*Section 7*/
 
 .section7 {
-  margin: 0 472px;
-  padding: 128px 0 160px;
+  padding: 4rem 0 6rem;
+  max-width: 35rem;
+  margin: 0 auto;
   font-family: 'GothamLight';
 }
 
 .section7_container {
-  padding: 24px;
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: 61.5rem;
+  padding: 0.5rem;
+  margin: 0 auto;
 }
 
 .section7_SN-container {
@@ -400,14 +467,14 @@
 .section7_founders {
   max-width: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr ;
   grid-row-gap: 2rem;
 }
 
 /* Section 8*/
 
 .section8 {
-  padding: 128px 32px 150px;
+  padding: 8rem 2rem 10rem;
   background: linear-gradient(20deg, rgba(85,91,103,1) 0%, rgba(17,19,23,1) 80%);
   font-family: 'GothamLight';
 }
@@ -463,19 +530,23 @@
 .section9 {
   display: block;
   background: #010101 url(/public/images/horagames_character.jpg) right bottom/cover no-repeat;
-  background-size: contain;
+
   margin: 0;
   position: relative;
   width: 100%;
 }
 
-.section9 h2, p {
+.section9 h2 {
   margin: 0;
 }
 
 .section9_container {
-  margin: 0 232px;
-  padding: 192px 32px;
+  padding: 6rem 1rem;
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: 61.5rem;
+  margin: 0 auto;
 }
 
 .section9_content {
@@ -490,8 +561,7 @@
   font-size: 1.125rem;
   line-height: 2;
   max-width: 52.5rem;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto
 }
 
 .section9_header h2{
@@ -514,28 +584,6 @@
   text-align: center;
 }
 
-/* @media only screen and (min-width: 1920px) {
-
-}
-
-@media only screen and (min-width: 1200px) {
-  .section9_container {
-    padding: 12rem 2rem;
-  }
-}
-
-@media only screen and (min-width: 768px){
-  .section9 {
-    background-size: contain;
-  }
-  
-  .section9_header h2 {
-    font-size: 3.25rem;
-  }
-} */
-
-
-
 .footer_SN {
   display: flex;
     flex-direction: row;
@@ -546,5 +594,90 @@
 
 .footer_SN div {
   padding: 20px;
+}
+
+.footer_image img {
+  padding-top: 0;
+  padding-bottom: 80px;
+}
+
+/* MEDIA */
+@media only screen and (min-width: 1920px) {
+  .section1_title h1 {
+    font-size: 4rem;
+  }
+}
+
+
+@media only screen and (min-width: 1200px) {
+  .section2_img {
+    width: 55% !important;
+    height: 70rem !important;
+    background-size: contain;
+    background-position: bottom right;
+    align-self: flex-end;
+  }
+
+  .section2_content {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    margin: 0 auto;
+  }
+
+  .section7 {
+    max-width: 60rem;
+    padding: 8rem 0 10rem;
+  }
+
+  .section7_content {
+    max-width: 60rem;
+    padding: 1.5rem;
+  }
+
+  .section7_founders {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+
+  .section9_container {
+    padding: 12rem 2rem;
+    max-width: 90rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .section2_img {
+    height: 32rem;
+  }
+
+  .section9 {
+    background-size: contain;
+  }
+
+  .section1_title h1 {
+    font-size: 3.25rem;
+  }
+  
+  .section2_title h1 {
+    font-size: 3.25rem;
+  }
+
+  .section4_title h1 {
+    font-size: 3.25rem;
+  }
+
+  .section7_title h1 {
+    font-size: 3.25rem;
+  }
+
+  .about h1 {
+    font-size: 3.25rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .section9_container {
+    background-color: #000c;
+  }
 }
 

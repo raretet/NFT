@@ -11,7 +11,7 @@ import Founder from './components/team/Founder';
 import Title from './components/title/title';
 
 const titleList = ['Blvck Phantoms','Blvck Shadows' ]
-const textList = [ 'Introducing the rarest 10% of the Blvck Genesis NFT collection, the Blvck Phantoms. Characterised by their wings made of light and shining grey skin, the 999 Phantoms roam freely in Blvck City. Blvck Phantoms remain emotionless and live without feelings.',  'Introducing the rarest 1% of Blvck Genesis, the Shadows. There are only 99 of them, characterised by their metallic dark skin and can be found in the depths of Blvck Land. Blvck Shadows are the firstborns of the Blvck Realm, their immortality is under threat in a world tainted by myths. <br/><br/> Act II depicts the rebellion of the Shadows against the Phantoms to claim what was once theirs. The rise of the Shadows has began.']
+const textList = [ 'Introducing the rarest 10% of the Blvck Genesis NFT collection, the Blvck Phantoms. Characterised by their wings made of light and shining grey skin, the 999 Phantoms roam freely in Blvck City. Blvck Phantoms remain emotionless and live without feelings.',  'Introducing the rarest 1% of Blvck Genesis, the Shadows. There are only 99 of them, characterised by their metallic dark skin and can be found in the depths of Blvck Land. Blvck Shadows are the firstborns of the Blvck Realm, their immortality is under threat in a world tainted by myths. Act II depicts the rebellion of the Shadows against the Phantoms to claim what was once theirs. The rise of the Shadows has began.']
 
 function App() {
 
@@ -26,7 +26,7 @@ function App() {
           <div className='section1_logo'><Logo img='/images/logoWhite.png'/></div>
           <div className='section1_title'><Title text='Blvck Members-Only Experience: Phygital, Fashion & Events.'/></div>
           <div className='section1_button'><Buttons button='button_black' text='Membership Dashboard' href=''/></div>
-          <div className='section1_button_grey'><Buttons button='button_grey' text='Join the Discord' href=''/></div>
+          <div className='section1_button_grey'><Buttons button='button_grey' text='Join the Discord' href='https://discord.com/invite/blvckparis'/></div>
           <div className='section1_SN'>
           <span className='SN'><SN img='/images/social_instagram.png' href='https://instagram.com/'/></span>
           <span className='SN'><SN img='/images/social_twitter.png' href='https://twitter.com/blvckparis'/></span>
@@ -36,7 +36,7 @@ function App() {
         </div>
       </header>
 
-      <section>
+      <section className='section2'>
         <div className='roadmap'>
           <div className='section2_title'>
             <Title text='Roadmap'/>
@@ -45,17 +45,16 @@ function App() {
             <Subtitle text='Every owner of a Blvck Genesis NFT gains member access to a world of exclusive merch, benefits, airdrops & more.'/>
           </div>
           <div className='section2_content'>
-            <div className='section2_img'>
-              <img src='/images/astronaut2.png' alt=''/>
-            </div>
             <div className='content_roadmap'>
             <Roadmap/>
+            </div>
+            <div className='section2_img'>
             </div>
           </div>
         </div>
       </section>
 
-      <section>
+       <section>
         <div className='acts'>
           <div className='act_container'>
               <div className='section3_content'>
@@ -67,11 +66,11 @@ function App() {
               <div className='section3_text'>
                 <h1 className='section3_title' >{titleList[titleIndex]}</h1>
                 <div className='section3_subtitle' >{textList[textIndex]}</div>
+                <img src='/images/play-button.svg' alt=''/>
               </div>
             </div>
           </div>
           <div className='play'>
-            <img src='/images/play-button.svg' alt=''/>
             <div className='section3_link'>
               <a href='https://youtube.com'>Play Now </a>
             </div>
@@ -89,11 +88,21 @@ function App() {
               <Subtitle text='With over 250 High Fashion traits.'/>
             </div>
             <div className='icons'>
-              <Icons img='/images/traits_outfit.png' text='OUTFIT'/>
-              <Icons img='/images/traits_league.png' text='LEAGUE'/>
-              <Icons img='/images/traits_tattoo.png' text='TATTOO'/>
-              <Icons img='/images/traits_haircut.png' text='HAIRCUT'/>
-              <Icons img='/images/traits_more.png' text='MORE'/>
+              <div className='icon_container'>
+                <Icons img='/images/traits_outfit.png' text='OUTFIT'/>
+              </div>
+              <div className='icon_container'>
+                <Icons img='/images/traits_league.png' text='LEAGUE'/>
+              </div>
+              <div className='icon_container'>
+                <Icons img='/images/traits_tattoo.png' text='TATTOO'/>
+              </div>
+              <div className='icon_container'>
+                <Icons img='/images/traits_haircut.png' text='HAIRCUT'/>
+              </div>
+              <div className='icon_container'>
+                <Icons img='/images/traits_more.png' text='MORE'/>
+              </div>
             </div>
           </div>
         </div>
@@ -185,7 +194,7 @@ function App() {
             <p>Now, we are expanding their metaverse experience to include NFT playable content, making this collaboration even more innovative, exciting, and exclusive!</p>
           </div>
         </div>
-      </section>
+      </section> 
 
       <footer className='footer'>
         <div className='footer_image'>
@@ -215,20 +224,6 @@ function App() {
         </div>
       </footer>
 
-      <section className='section10'>
-        <div className='section10_container'>
-          <div className='section10_content'>
-            <div>
-              <Title/>
-            </div>
-            <div>
-              <h3> </h3>
-            </div>
-            <p></p>
-            <div></div>
-          </div>
-        </div>
-      </section>
     </div>
   );
 }

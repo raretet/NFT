@@ -6,7 +6,7 @@ const Icons = (props) => {
   return (
     <div className={styles.container}>
         <img src={props.img} alt={props.img}/>
-        <div className={styles.text}>{props.text}</div>
+        <span className={styles.text}>{props.text}</span>
     </div>
   )
 }
