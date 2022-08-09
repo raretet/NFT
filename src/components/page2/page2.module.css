@@ -1,0 +1,338 @@
+@font-face {
+    font-family: 'GothamLight';
+    src: url(/public/font/1824-font.otf);
+  }
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'GothamLight';
+    color: white;
+}
+
+h1, h2, h3, h4 {
+    text-align: center;
+    color: inherit;
+    margin: auto;
+    font-weight: 400;
+}
+
+/* Header */
+
+.header {
+    width: 100%;
+    padding: 4rem 3rem;
+    margin-bottom: -11rem;
+    position: relative;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_container {
+    display: flex;
+    flex: 1;
+}
+
+.header_SN {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 0;
+}
+
+.SN1 img{width: 32px; height: 32px;}
+.SN2 img{width: 32px; height: 27px;}
+.SN3 img{width: 32px; height: 32px;}
+.SN4 img{width: 36px; height: 28px;}
+
+.SN2 {margin-left: 1.5rem;}
+.SN3 {margin-left: 1.5rem;}
+.SN4 {margin-left: 1.5rem;}
+
+/* Section 1 */
+
+.section1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: white;
+    background: #050608 url(/public/images/bg_discounts.png) right bottom / contain no-repeat;
+    padding: 4rem 1rem;
+}
+
+.section1_container {
+    display: block;
+    width: 100%;
+    height: 100%;
+    max-width: 61.5rem;
+    padding: .5rem;
+    margin: 0 auto;
+}
+
+.section1_content {
+    position: relative;
+}
+
+.section1_title h2{
+    font-size: 2.4rem;
+    line-height: 1.4;
+    margin-bottom: .5rem;
+}
+
+.section1_subtitle {
+    display: block;
+    width: 100%;
+    font-size: 1.35rem;
+    line-height: 2.45rem;
+    text-transform: uppercase;
+    margin-bottom: 5rem;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+.section1_text {
+    display: block;
+    text-align: justify;
+    color: inherit;
+    font-size: .89rem;
+    line-height: 2;
+    max-width: 52.5rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section1_container_astro {
+    width: 100%;
+    max-width: 52.5rem;
+    margin: 5rem auto 2rem;
+    background-color: #999aa01a;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.astro_item {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.astro_item h3{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #cecece;   
+}
+
+.astro_item p{
+    font-size: .7rem;
+    line-height: 1.8;  
+}
+
+/* Section 2*/
+
+.section2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10rem 2rem;
+    position: relative;
+    background: #000 url(/public/images/bg_traits.jpg) center / cover no-repeat;
+}
+
+.section2_container {
+    display: block;
+    width: 100%;
+    height: 100%;
+    max-width: 61.5rem;
+    padding: .5rem;
+    margin: 0 auto;
+}
+
+.section2_content {
+    position: relative;
+}
+
+.section2_title h2 {
+    font-size: 2.4rem;
+    line-height: 1.4;
+    margin-bottom: 2rem;
+}
+
+.section2_text {
+    display: block;
+    text-align: center;
+    color: inherit;
+    font-size: 1rem;
+    line-height: 2;
+    font-weight: 700;
+    max-width: 52.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2.2rem;
+}
+
+.section2_icons {
+    display: flex;
+    justify-content: center;
+}
+
+.section2_icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+    margin-right: 1rem;
+}
+
+.icon_text {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    margin-top: 1rem;
+    text-align: center;
+    font-weight: 700;
+}
+
+.icon_img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    margin: 0 auto;
+}
+
+.section3 {
+    background: linear-gradient(-45deg, rgba(85,91,103,1) 0%, rgba(17,19,23,1) 80%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 1rem;
+}
+
+.section3_container {
+    display: block;
+    width: 100%;
+    height: 100%;
+    max-width: 61.5rem;
+    padding: 0.5rem;
+    margin: 0 auto;
+}
+
+.section3_content {
+    position: relative;
+}
+
+.section3_title h2 {
+    font-size: 2.4rem;
+    line-height: 1.4;
+    margin-bottom: 2rem;
+}
+
+.section3_text {
+    text-align: center;
+    display: block;
+    font-size: 1rem;
+    line-height: 2;
+    max-width: 52.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 700;
+}
+
+
+/* MEDIA */
+
+@media only screen and (min-width: 1200px) {
+    .section1_container {
+        max-width: 90rem;
+        padding: 1.5rem;
+    }
+
+    /* Section 2*/
+
+    .section2_container {
+        max-width: 90rem;
+        padding: 1.5rem;
+    }
+
+    .section3_container {
+        max-width: 90rem;
+        padding: 1.5rem;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .header {
+        flex-direction: row;
+    }
+
+    .section1_title h2{
+        font-size: 3.25rem;
+    }
+
+    .section1_text {
+        font-size: 1.125rem;
+    }
+
+    .section1_container_astro {
+        flex-direction: row;
+    }
+
+    .astro_item {
+        width: 14rem;
+        margin: 0;
+    }
+
+    .section2_icons {
+        display: flex;
+        justify-content: center;
+        font-family: 'GothamLight';
+    }
+
+    .section2_icon {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        position: relative;
+    }
+
+    /* Section 2*/
+
+    .section2 {
+        padding: 15rem 2rem;
+    }
+
+    .section2_title h2 {
+        font-size: 3.25rem;
+    }
+
+    .section2_text {
+        font-size: 1.125rem;
+    }
+
+    .section2_icon {
+        margin-right: 2rem;
+    }
+
+    .section2_icon {
+        margin-right: 2rem;
+    }
+
+    .section3 {
+        padding: 10rem 2rem;
+    }
+    
+    .section3_title h2 {
+        font-size: 3.25rem;
+    }
+
+    .section3_text {
+        font-size: 1.125rem;
+        font-weight: 700;
+    }
+
+}
