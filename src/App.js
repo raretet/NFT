@@ -19,13 +19,16 @@ function App() {
   const [textIndex, setTextIndex] = useState(0)
 
   return (
+
+    
+
     <div className="App">
       <header>
        <div className='heroes'>
         <div className='container'>
           <div className='section1_logo'><Logo img='/images/logoWhite.png'/></div>
           <div className='section1_title'><Title text='Blvck Members-Only Experience: Phygital, Fashion & Events.'/></div>
-          <div className='section1_button'><Buttons button='button_black' text='Membership Dashboard' href=''/></div>
+          <div className='section1_button'><Buttons button='button_black' text='Membership Dashboard' href='/page2'/></div>
           <div className='section1_button_grey'><Buttons button='button_grey' text='Join the Discord' href='https://discord.com/invite/blvckparis'/></div>
           <div className='section1_SN'>
           <span className='SN'><SN img='/images/social_instagram.png' href='https://instagram.com/'/></span>
