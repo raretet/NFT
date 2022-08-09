@@ -1,21 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import {Routes, Route} from 'react-router-dom'
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter } from 'react-router-dom';
-import PageTwo from './components/page2/page2';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-  <BrowserRouter>
-  <Routes>
-    <Route path='/' element={<App />}/>
-    <Route path='/page2'element={<PageTwo/>} />
-  </Routes>
-  </BrowserRouter>
+    <App />
   </React.StrictMode>
 );
 

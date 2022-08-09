@@ -1,11 +1,11 @@
 import React from 'react'
-import Buttons from '../buttons/Buttons'
-import Link from '../links/Link'
-import Logo from '../logo/Logo'
-import { SN } from '../SN/SN'
-import styles from './page2.module.css'
+import Buttons from '../../components/buttons/Buttons'
+import Link from '../../components/links/Link'
+import Logo from '../../components/logo/Logo'
+import { SN } from '../../components/SN/SN'
+import styles from './dashboard.module.css'
 
-const PageTwo = () => {
+const DashboardPage = () => {
   return (
     <>
     <header className={styles.header}>
@@ -74,7 +74,7 @@ const PageTwo = () => {
               <span className={styles.icon_text}>CLOTHING</span>
             </div>
             <div className={styles.section2_icon}>
-            <div className={styles.icon_img}>
+              <div className={styles.icon_img}>
                 <img style={{width: '56px'}} src='/images/cap.png' alt=''/>
               </div>
               <span className={styles.icon_text}>ACCESSORIES</span>              
@@ -83,8 +83,7 @@ const PageTwo = () => {
             <div className={styles.icon_img}>
                 <img style={{width: '42px'}} src='/images/web.png' alt=''/>
               </div>
-              <span className={styles.icon_text}>DIGITAL GOODS
-</span>              
+              <span className={styles.icon_text}>DIGITAL GOODS</span>
             </div>
           </div>
         </div>
@@ -135,4 +134,4 @@ const PageTwo = () => {
   )
 }
 
-export default PageTwo
+export default DashboardPage
